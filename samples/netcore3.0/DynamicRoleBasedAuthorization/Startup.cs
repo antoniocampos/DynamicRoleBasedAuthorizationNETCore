@@ -34,7 +34,7 @@ namespace DynamicRoleBasedAuthorization
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddSingleton<IMvcControllerDiscovery, MvcControllerDiscovery>();
-            services.AddSingleton(new DynamicAuthorizationOptions { DefaultAdminUser = "mo.esmp@gmail.com" });
+            services.AddSingleton(new DynamicAuthorizationOptions { DefaultAdminUser = "mail@antoniocampos.net" });
 
             services.AddControllersWithViews(options =>
             {
